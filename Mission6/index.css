@@ -1,0 +1,330 @@
+body {
+    background-color: #e7e7e7;
+}
+
+@font-face {
+    font-family: Tribeca;
+    src: url(Tribeca.ttf);
+}
+
+.userOption {
+  font-family: "Comfortaa";
+  font-weight: bold;
+  font-size: .85em;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1em;
+}
+
+.userOption p {
+  background-color: #aaa;
+  border-radius: 1em;
+  transition: background-color 0.5s;
+  padding: 0.25em 2.5em;
+}
+
+.userOption p:hover {
+  background-color: white;
+  color: black;
+}
+
+.menu {
+  border: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  gap: 0em;
+  flex-basis: 1;
+  border-radius: 2em;
+  background-color: #ccc;
+  max-width: 70em;
+  margin: auto;
+}
+
+.menu li {
+  list-style-type: none;
+  flex-basis: 10em;
+  text-align: center;
+  font-family: "Comfortaa";
+  padding: 0;
+  margin: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 0.5rem;
+  width: 15em;
+  text-decoration: none;
+  background-color: #ccc ;
+  color: #111;
+  border-top: 3px solid #ccc;
+  border-bottom: 3px solid #ccc;
+  transition: background-color 0.5s;
+}
+
+.menu a:hover {
+  color: #111;
+  background-color: #aaa;
+  border-top: 3px solid #aaa;
+  border-bottom: 3px solid #333;
+}
+
+.name {
+  font-family: Tribeca;
+  font-size: 5em;
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  color: #fff;
+}
+
+.titleBackground {
+  margin: 2em auto;
+  background-image: url(images/bg-img-wordpress.jpg);
+  background-position: 25% 70%;
+  height: 13.5em;
+}
+
+.logo {
+    display: flex;
+    order: 1;
+    align-self: flex-start;
+    position: relative;
+    width: 100%;
+    top: 3em;
+    margin-left: 2.5em;
+}
+
+.image {
+  display: flex;
+  justify-content: space-around;
+}
+
+.imgPosition {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.titleDiv {
+  font-family: Tribeca;
+  font-weight: lighter;
+  display: flex;
+  justify-content: start;
+  padding: 0 1em;
+}
+
+.carnivorous {
+  margin: 1.5em 2em;
+  max-width: 45em;
+  background-color: #d04c3d;
+  border-radius: 2em;
+}
+
+.herbivorous {
+  margin: 1.5em 2em;
+  max-width: 45em;
+  background-color: #7d8d2e;
+  border-radius: 2em;
+}
+
+.aquatic {
+  margin: 1.5em 2em;
+  max-width: 45em;
+  background-color: #365e91;;
+  border-radius: 2em;
+}
+
+.flying {
+  margin: 1.5em 2em;
+  max-width: 45em;
+  background-color: #8be004;;
+  border-radius: 2em;
+}
+
+.dinosaursC {
+  transition: transform 1s;
+}
+
+.dinosaursC:hover {
+  transform: scale(1.25);
+}
+
+.dinosaursH {
+  transition: transform 1s;
+}
+
+.dinosaursH:hover {
+  transform: scale(1.2);
+}
+
+.dinosaursA {
+  transition: transform 1s;
+}
+
+.dinosaursA:hover {
+  transform: scale(1.2);
+}
+
+.dinosaursF {
+  transition: transform 1s;
+}
+
+.dinosaursF:hover {
+  transform: scale(1.2);
+}
+
+.categoriesC {
+  font-family: "Comfortaa";
+  font-weight: bold;
+  font-size: .85em;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1em;
+}
+
+.categoriesC p {
+  background-color: #f05442;
+  border-radius: 1em;
+  transition: background-color 0.5s;
+  padding: 0.25em 2.5em;
+}
+
+.categoriesC p:hover {
+  background-color: white;
+  color: #e04c3d;
+}
+
+.categoriesH {
+  font-family: "Comfortaa";
+  font-weight: bold;
+  font-size: .85em;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1em;
+}
+
+.categoriesH p {
+  background-color: #8da131;
+  border-radius: 1em;
+  transition: background-color 0.5s;
+  padding: 0.25em 2.5em;
+}
+
+.categoriesH p:hover {
+  background-color: white;
+  color: #7d8f2e;
+}
+
+.categoriesA {
+  font-family: "Comfortaa";
+  font-weight: bold;
+  font-size: .85em;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1em;
+}
+
+.categoriesA p {
+  background-color: #3e6eac;
+  border-radius: 1em;
+  transition: background-color 0.5s;
+  padding: 0.25em 2.5em;
+}
+
+.categoriesA p:hover {
+  background-color: white;
+  color: #365e91;
+}
+
+.categoriesF {
+  font-family: "Comfortaa";
+  font-weight: bold;
+  font-size: .85em;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1em;
+}
+
+.categoriesF p {
+  background-color: #c4f003;
+  border-radius: 1em;
+  transition: background-color 0.5s;
+  padding: 0.25em 2.5em;
+}
+
+.categoriesF p:hover {
+  background-color: white;
+  color: #b8e004;
+}
+
+.textC {
+  font-family: "Comfortaa";
+  font-size: .85em;
+  text-indent: 4em;
+  text-align: justify;
+  background-color: #f05442;
+  border-radius: 2em;
+  position: relative;
+  top: 0.5em;
+  padding: 0.5em 1em;
+  max-width: 90%;
+  height: 17.5em;
+  margin: auto;
+}
+
+.textH {
+  font-family: "Comfortaa";
+  font-size: .85em;
+  text-indent: 4em;
+  text-align: justify;
+  background-color: #8da131;
+  border-radius: 2em;
+  position: relative;
+  top: 0.5em;
+  padding: 0.5em 1em;
+  max-width: 90%;
+  height: 17.5em;
+  margin: auto;
+}
+
+.textA {
+  font-family: "Comfortaa";
+  font-size: .85em;
+  text-indent: 4em;
+  text-align: justify;
+  background-color: #3e6eac;
+  border-radius: 2em;
+  position: relative;
+  top: 0.5em;
+  padding: 0.5em 1em;
+  max-width: 90%;
+  height: 17.5em;
+  margin: auto;
+}
+
+.textF {
+  font-family: "Comfortaa";
+  font-size: .85em;
+  text-indent: 4em;
+  text-align: justify;
+  background-color: #c4f003;
+  border-radius: 2em;
+  position: relative;
+  top: 0.5em;
+  padding: 0.5em 1em;
+  max-width: 90%;
+  height: 17.5em;
+  margin: auto;
+}
+
+.code {
+  font-family: "Comfortaa";
+  font-size: .75em;
+  text-align: right;
+  position: relative;
+  right: 3.5em;
+}

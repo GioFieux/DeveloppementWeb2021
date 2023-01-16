@@ -1,0 +1,89 @@
+body{
+    background-color: #e7e7e7;
+}
+
+@font-face {
+    font-family: Tribeca;
+    src: url(Tribeca.ttf);
+}
+
+.ticketOptions {
+    font-family: "Comfortaa";
+    font-weight: bold;
+    font-size: .85em;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1em;
+  }
+  
+.ticketOptions p {
+background-color: #aaa;
+border-radius: 1em;
+transition: background-color 0.5s;
+padding: 0.25em 2.5em;
+}
+
+.ticketOptions p:hover {
+background-color: #6fbbf9;
+color: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #6fbbf9;
+    padding: 1em;
+    margin: 0 auto;
+    width: 95%;
+    border-radius: 1em;
+}
+
+.name {
+    text-align: center;
+    font-family: Tribeca;
+    font-size: 4em;
+    font-weight: lighter;
+    position: relative;
+    color: white;
+}
+
+.pageName {
+    text-align: center;
+    font-family: Tribeca;
+    font-size: 2em;
+    font-weight: lighter;
+    position: relative;
+    color: white;
+}
+
+.logo {
+    margin-left: 1em;
+    position: absolute;
+    width: 7em;
+    top: 1em;
+}
+
+input {
+    font-family: "Comfortaa";
+    border: 0;
+    border-radius: 1.5em;
+    margin: 0.5em;
+    padding: 0.5em;
+    width: 100%;
+}
+
+input::placeholder {
+    color: #bbbbbb;
+}
+
+select {
+    font-family: "Comfortaa";
+    position: relative;
+}
+
+option {
+    font-family: "Comfortaa";
+    border: 0;
+}

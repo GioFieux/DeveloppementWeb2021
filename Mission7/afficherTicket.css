@@ -1,0 +1,78 @@
+body{
+    background-color: #e7e7e7;
+}
+
+@font-face {
+    font-family: Tribeca;
+    src: url(Tribeca.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #6fbbf9;
+    padding: 1em;
+    margin: 0 auto;
+    width: 95%;
+    border-radius: 1em;
+}
+
+.name {
+    text-align: center;
+    font-family: Tribeca;
+    font-size: 4em;
+    font-weight: lighter;
+    position: relative;
+    color: white;
+}
+
+.pageName {
+    text-align: center;
+    font-family: Tribeca;
+    font-size: 2em;
+    font-weight: lighter;
+    position: relative;
+    color: white;
+}
+
+.logo {
+    position: absolute;
+    width: 7.5em;
+    top: 1em;
+    left: 5em;
+}
+
+fieldset {
+    font-family: "Comfortaa";
+    background-color: #689CDE;
+    margin: 0 auto;
+    border-radius: 1em;
+    vertical-align: middle;
+    position: relative;
+    top: 2em;
+    width: 30em;
+    padding: 2em;
+}
+
+.btn {
+    text-align: center;
+    padding: 1em;
+}
+
+.submitBtn {
+    font-family: "Comfortaa";
+    border: 0;
+    border-radius: 2em;
+    background-color: white;
+    position: relative;
+    text-align: center;
+    padding: 0.5em 2em;
+    transition: background-color 0.5s;
+}
+
+.submitBtn:hover {
+    background-color: #000000;
+    color: white;
+}

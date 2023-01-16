@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Mission 3</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    </head>
+    <header>
+        <ul class="menu">
+            <li><a href="http://localhost/wordpress/">Home</a></li>
+            <li><a href="http://localhost/wordpress/dinosaurs">Dinosaurs</a></li>
+            <li><a href="http://localhost/wordpress/contact/">Ticket</a></li>
+            <li><a href="http://localhost/wordpress/hotels-restaurants/">Hotels & Restaurants</a></li>
+          </ul>
+    </header>
+    <body>
+        <?php
+          $heure = date("H")+1;
+          echo "Il est $heure h <br>";
+          if ($heure>6 && $heure<=12){
+            echo "Morning <br>";
+            echo "<img src='images/Zebre.png' width='25%'>";
+          }
+          elseif ($heure>=13 && $heure<=16) {
+            echo "Afternoon <br>";
+            echo "<img src='images/Girafe.png' width='25%'>";
+          }
+          elseif ($heure>16 && $heure<20) {
+            echo "Noon <br>";
+            echo "<img src='images/Panda.png' width='25%'>";
+          }
+        ?>
+        <div class="titleBackground">
+            <h1 class="name">DinoWorld</h1>
+            <div class="logo">
+                <img src="images/LOGO_DinoWorld.png" width="125" height="125">
+            </div>
+        </div>
+
+        <div class="imgPosition">
+            <div class="carnivorous">
+                <h3 class="titleDiv">CARNIVOROUS</h3>
+                <div class="image">
+                    <img class="dinosaursC" src="images/Raptor.png" title="CAR-01-16 to CAR-04-16" width="200" height="175">
+                    <img class="dinosaursC" src="images/T-Rex.png" title="CAR-05-16" width="200" height="175">
+                </div>
+                <div class="categoriesC">
+                    <p>Raptor</p><p>T-Rex</p>
+                </div>
+                <div class="textC">
+                    <p>
+                        The carnivorous dinosaurs are from the same group : <b>the theropods</b>. They are bipedal dinosaurs, they move using their hind legs, so that the
+                        front legs were free to perform functions other than locomotions. They have many curved and serrated teeth adapted to a carnivorous diet and have
+                        hands with curved and pointed claws.
+                    </p>
+                    <p>
+                        Actual number of dinosaurs (max capacity of 16) : <br>
+                        <ul>
+                            <li>3 Raptors</li>
+                            <li>2 T-Rex</li>
+                            <li>1 Indominus Rex</li>
+                            <li>1 Indoraptor</li>
+                        </ul>
+                        </p>
+                    </p>
+                    <p>
+                        Surface : 15 km² divided into enclosures.
+                    </p>
+                </div>
+                <p class="code">Code : CAR-00-14</p>
+            </div>
+
+            <div class="herbivorous">
+                <h3 class="titleDiv">HERBIVOROUS</h3>
+                <div class="image">
+                    <img class="dinosaursH" src="images/Triceratops.png" title="HER-01-20 to HER-04-20" width="200" height="175">
+                    <img class="dinosaursH" src="images/Diplodocus.png" title="HER-05-20 / HER-06-20" width="200" height="175">
+                </div>
+                <div class="categoriesH">
+                    <p>Triceratops</p><p>Diplodocus</p>
+                </div>
+                <div class="textH">
+                    <p>
+                        The herbivorous dinosaurs are <b>sauropods</b> and <b>ornithischians</b>. They are quadrupedal (sauropods) or can be on their hind limbs (ornithischians).
+                        They were heavy and sturdy, with weights varying from species to species (range : 0.5 tons to 123 tons). Due to their size, they were not very agile or fast.
+                        Their teeth were not very pointed but were adapted to be able to tear, crush and digest leaves.
+                    </p>
+                    <p>
+                        Actual number of dinosaurs (max capacity of 20) : <br>
+                        <ul>
+                            <li>4 Triceratops</li>
+                            <li>2 Diplodocus</li>
+                            <li>2 Ankylosaurus</li>
+                            <li>4 Iguanodons</li>
+                        </ul>
+                        </p>
+                    </p>
+                    <p>
+                        Surface : 20 km² divided into enclosures.
+                    </p>
+                </div>
+                <p class="code">Code : HER-00-20</p>
+            </div>
+        </div>
+
+        <div class="imgPosition">
+            <div class="aquatic">
+                <h3 class="titleDiv">AQUATIC</h3>
+                <div class="image">
+                    <img class="dinosaursA" src="images/Mosasaurus.png" title="AQU-01-05" width="200" height="175">
+                    <img class="dinosaursA" src="images/Plesiosauria.png" title="AQU-02-05 / AQU-03-05" width="200" height="175">
+                </div>
+                <div class="categoriesA">
+                    <p>Mosasaurus</p><p>Elasmosaurus</p>
+                </div>
+                <div class="textA">
+                    <p>
+                        The aquatic dinosaurs are actually reptiles and are from the <b>Plesosauria</b> family. They are the largest marine
+                        reptiles in the world with specimens exceeding 15 meters in length. They looked a little bit like a turtle, but more
+                        elongated and without a shell and were carnivorous animal.
+                    </p>
+                    <p>
+                        Actual number of dinosaurs (max capacity of 5) : <br>
+                        <ul>
+                            <li>1 Mosasaurus</li>
+                            <li>2 Elasmosaurus</li>
+                        </ul>
+                        </p>
+                    </p>
+                    <p>
+                        Surface : 10 km² divided into water enclosures.
+                    </p>
+                </div>
+                <p class="code">Code : AQU-00-05</p>
+            </div>
+            <div class="flying">
+                <h3 class="titleDiv">FLYING</h3>
+                <div class="image">
+                    <img class="dinosaursF" src="images/Pteranodon.png" title="FLY-01-40 to FLY-06-40" width="200" height="175">
+                    <img class="dinosaursF" src="images/Quetzalcoatlus.png" title="FLY-07-40 to FLY-10-40" width="200" height="175">
+                </div>
+                <div class="categoriesF">
+                    <p>Pteranodon</p><p>Quetzalcoatlus</p>
+                </div>
+                <div class="textF">
+                    <p>
+                        Flying dinosaurs are actually flying reptiles and are from the familyt of <b>pterosaurus</b>. Their wingspan
+                        range was between 25 centimeters (Nemicolopterus) and 11 meters (Quetzalcoatlus). They had a long neck with a long
+                        skull full of needlelike teeth or teethless and had crest on tehir head. They were carnivorous animal and occasionally
+                        ate fruits.
+                    <p>
+                        Actual number of dinosaurs (max capacity of 40) : <br>
+                        <ul>
+                            <li>6 Pteranodons</li>
+                            <li>4 Quetzalcoatlus</li>
+                            <li>15 Dimorphodons</li>
+                        </ul>
+                        </p>
+                    </p>
+                    <p>
+                        Surface : A big aviary of 10 km².
+                    </p>
+                </div>
+                <p class="code">Code : FLY-00-40</p>
+            </div>
+        </div>
+    </body>
+</html>
